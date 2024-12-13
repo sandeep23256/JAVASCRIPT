@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a ={
+            fname: 'vikas',
+            lname:'jain',
+            age:23,
+            email: 'sandeep@email.com',
+
+            favmovies:['doom','sholay', 'hm'],//object array
+            //ek or object ke ander object//
+            living:{
+
+                city:'gwalior',
+                country:'india',
+            },
+            salary:function(){  //function 
+                return 25000;
+                
+            },
+
+            fullname: function(){
+                fname="raj" //local
+                //return this.fname+""+this.lname;//
+                //(var a ke liye this use)
+                return this.fname
+            },
+                
+            } // end object//
+
+            document.write(a.fullname())
+           // document.write(JSON.stringify(a))
+           // document.write(a.fname,"<br>");
+           // document.write(a.fullname())
+            
+           console.log(a);
+           document.write(a.fullname())
+           // document.write(a. salary)
+           // document.write(a.fname,"<br>");
+           // document.write(a.fullname())
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<script>
+    let a=20
+    let b="ram"
+    let c=45.5
+    let d=true
+    let e=["ram",56,5.5,true] //array
+    //0 1 2 3 4 5
+    let f ={ //object
+        name:"ram",
+        city:"gwalior",
+        phone:585776868798,
+        itm:["ram,45,56.5"],
+        pn:function(){document.write("hello pn")}
+    }
+    
+    document.write(f.name)
+    document.write(JSON.stringify(f))
+    f.pn()
+    console.log(f)
+
+    document.write(typeof(f))
+    
+    document.write(e,"<br>")
+    document.write(e[2],"<br>")
+    document.log(e)
+</script>
